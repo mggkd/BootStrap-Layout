@@ -1,0 +1,30 @@
+.staff {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.staff div {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.hodShow {
+    padding: 0;
+}
+
+.regisBtn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.mar1 {
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+.regis {
+    display: flex;
+    justify-content: center;
+}

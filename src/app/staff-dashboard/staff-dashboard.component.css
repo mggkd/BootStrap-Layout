@@ -1,0 +1,38 @@
+.container {
+    margin-top: 2rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    margin-bottom: 0.2rem;
+}
+
+.card-status {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card-status.approved {
+    color: #28a745;
+}
+
+.card-status.rejected {
+    color: #dc3545;
+}

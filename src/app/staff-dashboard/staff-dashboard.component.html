@@ -1,0 +1,33 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col">
+      <h2 class="text-center mb-4">Staff Dashboard</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3" *ngIf="leaveDataList.length === 0">
+      <div class="card p-4 text-center">
+        <p class="text-danger mb-0">Not applied for any leaves yet.</p>
+        <button class="btn btn-primary mt-2" routerLink="/leave-application-form">+ Apply Leave</button>
+      </div>
+    </div>
+    <div class="col-md-8 offset-md-2">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let leave of leaveDataList">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">{{ leave.startDate | date: 'dd MMM, yyyy' }} to {{ leave.endDate | date: 'dd MMM, yyyy' }}</h5>
+              <p class="card-text">{{ leave.reason }}</p>
+              <p class="card-text">Status: {{ leave.status }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col text-center">
+      <button class="btn btn-primary" routerLink="/leave-application-form">+ Apply Leave</button>
+    </div>
+  </div>
+</div>

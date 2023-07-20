@@ -1,0 +1,44 @@
+<form [formGroup]="staffFormObj" (ngSubmit)="onSubmit()" class="staff">
+    <div class="form-group mar1">
+        <label for="firstName" class="col-form-label">First Name:</label>
+        <input type="text" class="form-control" id="firstName" formControlName="firstName">
+    </div>
+    <div class="form-group">
+        <label for="lastName" class="col-form-label">Last Name:</label>
+        <input type="text" class="form-control" id="lastName" formControlName="lastName">
+    </div>
+    <div class="form-group mar1">
+        <label for="email" class="col-form-label">Email ID:</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+    </div>
+    <div class="form-group">
+        <label for="contact" class="col-form-label">Contact No.:</label>
+        <input type="text" class="form-control" id="contact" formControlName="contact">
+    </div>
+    <div class="form-group hodShow mar1" style="display: block;">
+        <label>Department:</label>
+        <div class="dropdown">
+            <button class="btn btn-outline-dark dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-expanded="false">
+                Choose Department
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" id="mech">Mechanical</a>
+                <a class="dropdown-item" id="etc">Electronics and Telecommunication</a>
+                <a class="dropdown-item" id="it">Information Technology</a>
+            </div>
+        </div>
+    </div>
+    <div class="form-group mar1">
+        <label for="userName" class="col-form-label">Username:</label>
+        <input type="email" class="form-control" id="userName" formControlName="userName">
+    </div>
+    <div class="form-group">
+        <label for="password" class="col-form-label">Password:</label>
+        <input type="password" class="form-control" id="password" formControlName="password">
+    </div>
+    <button type="submit" class="btn btn-success mb-4 regisBtn">Register</button>
+    <div class="d-flex regis">
+        <p>Already Registered? <a routerLink="/login">Login</a></p>
+    </div>
+</form>

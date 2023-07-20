@@ -1,0 +1,24 @@
+<h3>hod</h3>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col">
+      <h2 class="text-center mb-4">HOD Dashboard</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let leave of leaveDataList">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ leave.startDate | date: 'dd MMM, yyyy' }} to {{ leave.endDate | date: 'dd MMM, yyyy' }}</h5>
+          <p class="card-text">{{ leave.reason }}</p>
+          <p class="card-text">Status: {{ leave.status }}</p>
+          <div *ngIf="leave.status === 'Pending'">
+            <button class="btn btn-success" (click)="approveLeave(leave)">Approve</button>
+            <button class="btn btn-danger" (click)="rejectLeave(leave)">Reject</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
