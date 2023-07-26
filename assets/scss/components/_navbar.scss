@@ -1,0 +1,28 @@
+.mainHeader {
+    .navbar-brand {
+        max-width: 120px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .navbar-nav {
+
+        .nav-item{
+
+            .nav-link{
+                text-transform: uppercase;
+                color: $color-white;
+            }
+
+            &.active , &:hover , &:focus {  //nav-item.active
+
+                .nav-link{
+                    color: $color-primary;
+                    border-bottom: 2px solid $color-primary;
+                }
+            }
+        }
+    }
+}

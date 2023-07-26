@@ -1,0 +1,23 @@
+.aboutUs{
+    height: 400px;
+    width: 400px;
+}
+
+.testmonials{
+    .owl-theme .owl-nav{
+        position: absolute;
+        left: -7%;
+        top: 40%;
+        width: 114%;
+        display: flex;
+        justify-content: space-between;
+    }
+    p{
+        text-align: justify;
+    }
+    .rounded-circle{
+        width: 50% !important;
+        margin: 0 auto;
+
+    }
+}
